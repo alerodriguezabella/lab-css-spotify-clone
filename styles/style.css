@@ -1,8 +1,154 @@
-/*
-Colors:
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: #1a1a1a;
+}
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+/* NAV */
 
-*/
+nav {
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+.navbar-elements {
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.nav-logo {
+    width: 150px;
+    height: 100%;
+    margin: 10px;
+}
+
+nav, .navbar-elements {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-elements a {
+    padding-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+/* INTRO */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    background-image: url("../images/landing.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    color: white;
+    font-weight: lighter;
+
+    margin-top: 66px;
+}
+
+.intro h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.intro p {
+    font-size: 28px;
+    width: 60%;
+    text-align: center;
+}
+
+/* NEWS */
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.novelties {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.news > h3 {
+    border-bottom: 4px solid #00B172;
+    font-size: 28px;
+
+}
+
+.novelties img {
+    height: 40px;
+}
+
+.novelties h4 {
+    color: #00B172;
+}
+
+.nov1, .nov2, .nov3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+}
+
+/* EXAMPLE */
+
+.example {
+    background-color: #00B172;
+    background-image: url('../images/spotify-icon-white.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    padding-left: 20px;
+}
+
+.text-example {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    padding: 30px 50px;
+}
+
+.img-example {
+    margin: 80px 50px 40px 0;
+    width: 25%;
+    object-fit: cover;
+}
+
+.text-example h3 {
+    text-decoration: underline;
+    width: 100%;
+    font-size: 28px;
+}
+
+.text-example h4 {
+    font-size: 28px;
+}
+
+.text-example-subtext {
+    width: 70%;
+}
